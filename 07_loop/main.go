@@ -2,9 +2,18 @@ package main
 
 import "fmt"
 
-func main() {
-	i := 1
-	for ; i <= 10; i++ {
+func NormalLoop() {
+	for i := 1; i <= 10; i++ {
 		fmt.Println(i)
 	}
+}
+
+func InfiniteLoop() {
+  for {
+    fmt.Println("Infinite Loop")
+  }
+}
+
+func main() {
+  InfiniteLoop()
 }
