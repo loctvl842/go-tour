@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func fibonacci(c, quit chan int) {
+func fibonacci(c chan int, quit chan int) {
 	x, y := 0, 1
 	for {
 		select {

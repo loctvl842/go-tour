@@ -1,5 +1,12 @@
 package main
 
+import (
+	"fmt"
+	"strings"
+)
+
 func main() {
-  println("Hello World")
+	str := "Hello World"
+	lower := strings.ToLower(str)
+	fmt.Println(lower) // Output: hello world
 }

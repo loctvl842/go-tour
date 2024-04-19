@@ -10,7 +10,10 @@ func sum(nums ...int) int {
 	return total
 }
 
+func printValues(values ...interface{}) {
+	fmt.Println(values...)
+}
+
 func main() {
-	fmt.Println(sum(1, 2, 3, 4, 5))
-	fmt.Println(sum(1, 2, 3))
+  printValues(1, "Hello", 3.14)
 }
